@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #142d4c, #05499d, #142d4c);
+}
+
+.container {
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 16px 40px rgb(0 0 0 / 25%);
+}
+
+.container p {
+  margin-bottom: 10px;
+  color: #142d4c;
+}
+
+.container input,
+.container button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+}
+
+.container button {
+  background: #05499d;
+  color: #fff;
+  cursor: pointer;
+}
+.container input{
+  outline: none;
+
+}
+.error{
+  border: 1px solid red;
+
+}
+.imagebox{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.error{
+  border: 1px solid red;
+  animation: shake 0.1s linear 10;
+  
+}
+@keyframes shake {
+  0%{
+    transform: translateX(0);
+
+
+  }
+  25%{
+      transform: translateX(-2px);
+    
+  }
+  50%{
+      transform: translateX(0);
+    
+  }
+  75%{
+      transform: translateX(2px);
+    
+  }
+  100%{
+      transform: translateX(0);
+    
+  }
+  
+}
